@@ -1,7 +1,17 @@
-#safe {
-    display: block;
+/* INITIAL / SAFE STATE
+   This file is served from GitHub Pages and can be edited remotely. */
+
+#message-original {
+  display: block;
+  color: #176b3a;
+  font-weight: 600;
 }
 
-#changed {
-    display: none;
+#message-alternate {
+  display: none;
+}
+
+/* No extra message is injected in the initial state. */
+#remote-injected::before {
+  content: "";
 }
