@@ -1,17 +1,26 @@
-/* INITIAL / SAFE STATE
-   This file is served from GitHub Pages and can be edited remotely. */
+/* TEST STATE
+   Replace the contents of style.css with these rules and publish.
+   This changes the rendered presentation without editing index.html. */
 
 #message-original {
-  display: block;
-  color: #176b3a;
-  font-weight: 600;
-}
-
-#message-alternate {
   display: none;
 }
 
-/* No extra message is injected in the initial state. */
+#message-alternate {
+  display: block;
+  color: #9b2c2c;
+  font-weight: 700;
+}
+
+/* CSS-generated text: this is visual content, not new HTML text. */
 #remote-injected::before {
-  content: "";
+  content: "REMOTE CSS UPDATE: this message is being displayed by a CSS pseudo-element.";
+  display: block;
+  margin-top: 12px;
+  padding: 12px;
+  color: #7a2e00;
+  background: #fff1df;
+  border: 1px solid #e6a15c;
+  border-radius: 8px;
+  font-weight: 700;
 }
